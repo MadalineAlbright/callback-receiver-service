@@ -1,0 +1,125 @@
+<!--<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.maddie.com/customer-creation_ws"-->
+<!--           targetNamespace="http://www.maddie.com/customer-creation_ws" elementFormDefault="qualified">-->
+
+<!--&lt;!&ndash;    <xs:element name="webRequestCommon">&ndash;&gt;-->
+<!--&lt;!&ndash;    <xs:complexType>&ndash;&gt;-->
+<!--&lt;!&ndash;        <xs:sequence>&ndash;&gt;-->
+<!--&lt;!&ndash;            <xs:element name="company" type="xs:string" minOccurs="0"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <xs:element name="password" type="xs:string"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <xs:element name="userName" type="xs:string"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </xs:sequence>&ndash;&gt;-->
+<!--&lt;!&ndash;    </xs:complexType>&ndash;&gt;-->
+<!--&lt;!&ndash;    </xs:element>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    CUSTOMER REQUEST&ndash;&gt;-->
+
+<!--&lt;!&ndash;    ADD CUSTOMER REQUEST&ndash;&gt;-->
+
+<!--    <xs:element name="addCustomerRequest">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>-->
+<!--                <xs:element name="Gender" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>-->
+<!--                <xs:element name="Nationality" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>-->
+<!--                <xs:element name="Email" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>-->
+<!--                <xs:element name="Address" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    &lt;!&ndash;    GET CUSTOMER BY ID REQUEST&ndash;&gt;-->
+
+<!--    <xs:element name="getCustomerByIdRequest">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="customerId" type="xs:long"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    &lt;!&ndash;    GET ALL CUSTOMERS  REQUEST&ndash;&gt;-->
+<!--    <xs:element name="getAllcustomersRequest">-->
+<!--        <xs:complexType/>-->
+<!--    </xs:element>-->
+
+<!--    <xs:element name="updateCustomerRequest">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="customerInfo" type="tns:customerInfo"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    <xs:element name="deleteCustomerRequest">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="customerId" type="xs:long"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    &lt;!&ndash;    CUSTOMER RESPONSE&ndash;&gt;-->
+
+<!--    <xs:element name="getCustomerByIdResponse">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="customerInfo" type="tns:customerInfo"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+<!--    <xs:complexType name="customerInfo">-->
+<!--        <xs:sequence>-->
+<!--            <xs:element name="customerId" type="xs:long"/>-->
+<!--            <xs:element name="Name" type="xs:string"/>-->
+<!--            <xs:element name="Email" type="xs:string"/>-->
+<!--            <xs:element name="status" type="tns:Status" maxOccurs="unbounded"/>-->
+<!--        </xs:sequence>-->
+<!--    </xs:complexType>-->
+
+<!--    <xs:element name="getAllCustomersResponse">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="customerInfo" type="tns:customerInfo" maxOccurs="unbounded"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    <xs:complexType name="serviceStatus">-->
+<!--        <xs:sequence>-->
+<!--            <xs:element name="statusCode" type="xs:string"/>-->
+<!--            <xs:element name="message" type="xs:string"/>-->
+<!--        </xs:sequence>-->
+<!--    </xs:complexType>-->
+
+<!--    <xs:simpleType name="Status">-->
+<!--        <xs:restriction base="xs:string">-->
+<!--            <xs:enumeration value="SUCCESS"/>-->
+<!--            <xs:enumeration value="FAILURE"/>-->
+<!--        </xs:restriction>-->
+<!--    </xs:simpleType>-->
+
+<!--    <xs:element name="addCustomerResponse">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="serviceStatus" type="tns:serviceStatus"/>-->
+<!--                <xs:element name="customerInfo" type="tns:customerInfo"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    <xs:element name="updateCustomerResponse">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="serviceStatus" type="tns:serviceStatus"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+
+<!--    <xs:element name="deleteCustomerResponse">-->
+<!--        <xs:complexType>-->
+<!--            <xs:sequence>-->
+<!--                <xs:element name="serviceStatus" type="tns:serviceStatus"/>-->
+<!--            </xs:sequence>-->
+<!--        </xs:complexType>-->
+<!--    </xs:element>-->
+<!--</xs:schema>-->
